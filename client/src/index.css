@@ -1,0 +1,34 @@
+/* Tailwind base directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles not covered by Tailwind */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+    background-color: #131313;
+    color: #e5e2e1;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .border-gold {
+    border-color: rgba(212, 163, 115, 0.15);
+  }
+  .border-gold-accent {
+    border-color: rgba(212, 163, 115, 0.28);
+  }
+  .bg-gold-subtle {
+    background-color: rgba(212, 163, 115, 0.08);
+  }
+  .text-shadow-hero {
+    text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  }
+}

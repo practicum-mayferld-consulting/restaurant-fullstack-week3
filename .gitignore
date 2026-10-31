@@ -36,4 +36,11 @@ pids
 
 # Temporary files
 *.tmp
+
+# Environment variables - NEVER commit secrets
+.env
+.env.local
+.env.*.local
+server/.env
+client/.env
 *.temp
