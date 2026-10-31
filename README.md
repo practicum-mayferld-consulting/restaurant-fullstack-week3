@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,vite,tailwind,js,nodejs,express,postgres,git,github,vercel,railway&perline=11" />
+</p>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=F97316&center=true&vCenter=true&width=800&lines=Savoria+Bistro+%26+Cellar;Week+3+Documentation" alt="Savoria Bistro & Cellar Week 3 Documentation" />
