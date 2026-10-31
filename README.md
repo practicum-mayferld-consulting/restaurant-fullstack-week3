@@ -37,18 +37,20 @@
 
 | Couche | Technologie | Version |
 |---|---|---|
-| Frontend UI | React | 18.3.x |
-| Build tool | Vite | 5.4.x |
-| CSS | Tailwind CSS | 3.4.x |
-| Backend | Node.js + Express | 18+ / 4.19.x |
-| Base de données | PostgreSQL (Neon) | 15+ |
-| Driver SQL | node-postgres (pg) | 8.12.x |
-| Sessions | express-session + connect-pg-simple | 1.18.x / 9.0.x |
-| Hashage mots de passe | bcryptjs | 2.4.x |
-| Variables d'env | dotenv | 16.4.x |
-| Déploiement backend | Railway | — |
-| Déploiement frontend | Vercel | — |
-| Versioning | Git + GitHub | — |
+| Frontend UI | ![React](https://img.shields.io/badge/React-18.3.x-61DAFB?style=flat&logo=react&logoColor=white&labelColor=20232A) | 18.3.x |
+| Build tool | ![Vite](https://img.shields.io/badge/Vite-5.4.x-646CFF?style=flat&logo=vite&logoColor=white&labelColor=1a1a2e) | 5.4.x |
+| CSS | ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3.4.x-38BDF8?style=flat&logo=tailwindcss&logoColor=white&labelColor=0f172a) | 3.4.x |
+| Runtime | ![Node.js](https://img.shields.io/badge/Node.js-18+-5FA04E?style=flat&logo=nodedotjs&logoColor=white&labelColor=1a1a1a) | 18+ |
+| Backend | ![Express](https://img.shields.io/badge/Express-4.19.x-000000?style=flat&logo=express&logoColor=white&labelColor=333333) | 4.19.x |
+| Base de données | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-4169E1?style=flat&logo=postgresql&logoColor=white&labelColor=1a1a2e) | 15+ |
+| Hébergement DB | ![Neon](https://img.shields.io/badge/Neon-Serverless-00E599?style=flat&logo=neon&logoColor=black&labelColor=0a0a0a) | — |
+| Driver SQL | ![pg](https://img.shields.io/badge/node--postgres-8.12.x-4169E1?style=flat&logo=postgresql&logoColor=white&labelColor=1a1a2e) | 8.12.x |
+| Sessions | ![express-session](https://img.shields.io/badge/express--session-1.18.x-000000?style=flat&logo=express&logoColor=white&labelColor=333333) | 1.18.x |
+| Hashage | ![bcrypt](https://img.shields.io/badge/bcryptjs-2.4.x-FF6B35?style=flat&logo=npm&logoColor=white&labelColor=1a1a1a) | 2.4.x |
+| Variables d'env | ![dotenv](https://img.shields.io/badge/dotenv-16.4.x-ECD53F?style=flat&logo=dotenv&logoColor=black&labelColor=1a1a1a) | 16.4.x |
+| Déploiement backend | ![Railway](https://img.shields.io/badge/Railway-backend-0B0D0E?style=flat&logo=railway&logoColor=white&labelColor=7B2FBE) | — |
+| Déploiement frontend | ![Vercel](https://img.shields.io/badge/Vercel-frontend-000000?style=flat&logo=vercel&logoColor=white&labelColor=333333) | — |
+| Versioning | ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white&labelColor=1a1a1a) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white&labelColor=333333) | — |
 
 ---
 
