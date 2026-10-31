@@ -1,3 +1,9 @@
+
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=F97316&center=true&vCenter=true&width=800&lines=Savoria+Bistro+%26+Cellar;Week+3+Documentation" alt="Savoria Bistro & Cellar Week 3 Documentation" />
+</p>
+
 # Savoria Bistro & Cellar  Week 3 Documentation
 
 > Full-stack restaurant web application with real backend, PostgreSQL database, authentication, and live deployment.
