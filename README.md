@@ -9,9 +9,12 @@
 # Savoria Bistro & Cellar  Week 3 Documentation
 
 
-<p align="center">
-  <img src="./assets/banner.png" alt="Project Banner" width="800"/>
-</p>
+<div align="center">
+  <img src="https://res.cloudinary.com/wemlub7x/image/upload/v1793371824/Screenshot_From_2026-10-30_14-47-20_moreod.png" alt="Savoria Bistro & Cellar" width="100%" />
+</div>
+
+<br/>
+
 
 > Full-stack restaurant web application with real backend, PostgreSQL database, authentication, and live deployment.
 
