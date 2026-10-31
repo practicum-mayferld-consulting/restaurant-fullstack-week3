@@ -1,4 +1,4 @@
-# Savoria Bistro & Cellar — Week 3 Documentation
+# Savoria Bistro & Cellar  Week 3 Documentation
 
 > Full-stack restaurant web application with real backend, PostgreSQL database, authentication, and live deployment.
 
@@ -13,7 +13,7 @@
 5. [Structure des Fichiers](#5-structure-des-fichiers)
 6. [Schéma de la Base de Données](#6-schéma-de-la-base-de-données)
 7. [Flux d'Authentification](#7-flux-dauthentification)
-8. [Flux des Données — Menu](#8-flux-des-données--menu)
+8. [Flux des Données  Menu](#8-flux-des-données--menu)
 9. [Flux des Réservations](#9-flux-des-réservations)
 10. [API Reference](#10-api-reference)
 11. [Variables d'Environnement](#11-variables-denvironnement)
@@ -43,14 +43,14 @@
 | Runtime | ![Node.js](https://img.shields.io/badge/Node.js-18+-5FA04E?style=flat&logo=nodedotjs&logoColor=white&labelColor=1a1a1a) | 18+ |
 | Backend | ![Express](https://img.shields.io/badge/Express-4.19.x-000000?style=flat&logo=express&logoColor=white&labelColor=333333) | 4.19.x |
 | Base de données | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-4169E1?style=flat&logo=postgresql&logoColor=white&labelColor=1a1a2e) | 15+ |
-| Hébergement DB | ![Neon](https://img.shields.io/badge/Neon-Serverless-00E599?style=flat&logo=neon&logoColor=black&labelColor=0a0a0a) | — |
+| Hébergement DB | ![Neon](https://img.shields.io/badge/Neon-Serverless-00E599?style=flat&logo=neon&logoColor=black&labelColor=0a0a0a) |  |
 | Driver SQL | ![pg](https://img.shields.io/badge/node--postgres-8.12.x-4169E1?style=flat&logo=postgresql&logoColor=white&labelColor=1a1a2e) | 8.12.x |
 | Sessions | ![express-session](https://img.shields.io/badge/express--session-1.18.x-000000?style=flat&logo=express&logoColor=white&labelColor=333333) | 1.18.x |
 | Hashage | ![bcrypt](https://img.shields.io/badge/bcryptjs-2.4.x-FF6B35?style=flat&logo=npm&logoColor=white&labelColor=1a1a1a) | 2.4.x |
 | Variables d'env | ![dotenv](https://img.shields.io/badge/dotenv-16.4.x-ECD53F?style=flat&logo=dotenv&logoColor=black&labelColor=1a1a1a) | 16.4.x |
-| Déploiement backend | ![Railway](https://img.shields.io/badge/Railway-backend-0B0D0E?style=flat&logo=railway&logoColor=white&labelColor=7B2FBE) | — |
-| Déploiement frontend | ![Vercel](https://img.shields.io/badge/Vercel-frontend-000000?style=flat&logo=vercel&logoColor=white&labelColor=333333) | — |
-| Versioning | ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white&labelColor=1a1a1a) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white&labelColor=333333) | — |
+| Déploiement backend | ![Railway](https://img.shields.io/badge/Railway-backend-0B0D0E?style=flat&logo=railway&logoColor=white&labelColor=7B2FBE) |  |
+| Déploiement frontend | ![Vercel](https://img.shields.io/badge/Vercel-frontend-000000?style=flat&logo=vercel&logoColor=white&labelColor=333333) |  |
+| Versioning | ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white&labelColor=1a1a1a) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white&labelColor=333333) |  |
 
 ---
 
@@ -62,7 +62,7 @@
 Bibliothèque UI. Utilisée pour composer les composants (`Header`, `Menu`, `Reservation`, `AuthModal`), gérer l'état local avec `useState` et les effets de bord (fetch, scroll) avec `useEffect`.
 
 **Vite**
-Build tool et serveur de développement. Remplace Create React App — beaucoup plus rapide. Configuré avec un proxy `/api → localhost:3001` pour éviter les erreurs CORS en développement.
+Build tool et serveur de développement. Remplace Create React App  beaucoup plus rapide. Configuré avec un proxy `/api → localhost:3001` pour éviter les erreurs CORS en développement.
 
 **Tailwind CSS**
 Framework CSS utility-first. Toute la mise en page et le design sont construits avec des classes Tailwind directement dans le JSX. PostCSS est utilisé comme processeur.
@@ -79,10 +79,10 @@ Framework web minimaliste. Gère le routing (`/api/auth`, `/api/menu`, `/api/res
 Driver officiel PostgreSQL pour Node.js. Utilisé via un `Pool` de connexions pour interroger la base Neon.
 
 **express-session + connect-pg-simple**
-Gestion des sessions HTTP. Les sessions sont stockées dans la table `user_sessions` de Postgres — elles survivent aux redémarrages du serveur et aux rechargements de page.
+Gestion des sessions HTTP. Les sessions sont stockées dans la table `user_sessions` de Postgres  elles survivent aux redémarrages du serveur et aux rechargements de page.
 
 **bcryptjs**
-Hashage des mots de passe avec salt. Les mots de passe ne sont jamais stockés en clair — uniquement le hash bcrypt (cost factor 12).
+Hashage des mots de passe avec salt. Les mots de passe ne sont jamais stockés en clair  uniquement le hash bcrypt (cost factor 12).
 
 **dotenv**
 Charge les variables `DATABASE_URL`, `SESSION_SECRET`, `PORT` depuis le fichier `.env` (jamais committé).
@@ -94,11 +94,11 @@ Base relationnelle hébergée. Neon offre un tier gratuit avec connexions SSL. T
 
 ### DevOps & Déploiement
 
-**Railway** — déploiement du serveur Express. Lit les variables d'environnement via le dashboard. Détecte automatiquement Node.js via Nixpacks.
+**Railway**  déploiement du serveur Express. Lit les variables d'environnement via le dashboard. Détecte automatiquement Node.js via Nixpacks.
 
-**Vercel** — déploiement du client React. Le fichier `vercel.json` configure le rewrite SPA (toutes les routes → `index.html`).
+**Vercel**  déploiement du client React. Le fichier `vercel.json` configure le rewrite SPA (toutes les routes → `index.html`).
 
-**Git + GitHub** — versioning. Le `.gitignore` exclut `node_modules/`, `dist/`, `.env` et tous les fichiers de secrets.
+**Git + GitHub**  versioning. Le `.gitignore` exclut `node_modules/`, `dist/`, `.env` et tous les fichiers de secrets.
 
 ---
 
@@ -296,7 +296,7 @@ sequenceDiagram
 
 ---
 
-## 8. Flux des Données — Menu
+## 8. Flux des Données  Menu
 
 ```mermaid
 sequenceDiagram
@@ -359,22 +359,22 @@ sequenceDiagram
 |---|---|---|---|
 | `POST` | `/api/auth/signup` | `{ name, email, password }` | `201 { user }` |
 | `POST` | `/api/auth/login` | `{ email, password }` | `200 { user }` |
-| `POST` | `/api/auth/logout` | — | `200 { message }` |
-| `GET` | `/api/auth/me` | — (cookie) | `200 { user }` ou `401` |
+| `POST` | `/api/auth/logout` |  | `200 { message }` |
+| `GET` | `/api/auth/me` |  (cookie) | `200 { user }` ou `401` |
 
 ### Menu
 
 | Méthode | Route | Query | Réponse |
 |---|---|---|---|
 | `GET` | `/api/menu` | `?category=starters\|mains\|desserts` | `200 [menu_items]` |
-| `GET` | `/api/menu/:id` | — | `200 menu_item` ou `404` |
+| `GET` | `/api/menu/:id` |  | `200 menu_item` ou `404` |
 
 ### Reservations
 
 | Méthode | Route | Body | Auth | Réponse |
 |---|---|---|---|---|
 | `POST` | `/api/reservations` | `{ name, email, phone, guests, date, ... }` | Optionnel | `201 { reservation }` |
-| `GET` | `/api/reservations/mine` | — | Requis | `200 [reservations]` |
+| `GET` | `/api/reservations/mine` |  | Requis | `200 [reservations]` |
 
 ### Health
 
@@ -389,10 +389,10 @@ sequenceDiagram
 Fichier `server/.env` (ne jamais committer) :
 
 ```env
-# Neon Postgres — copier depuis le dashboard Neon
+# Neon Postgres  copier depuis le dashboard Neon
 DATABASE_URL=postgres://user:password@host/dbname?sslmode=require
 
-# Secret session — chaîne longue et aléatoire
+# Secret session  chaîne longue et aléatoire
 SESSION_SECRET=remplacer_par_une_vraie_chaine_secrete
 
 # Port Express
@@ -446,10 +446,10 @@ npm run seed
 ### Démarrer
 
 ```bash
-# Terminal 1 — serveur Express (port 3001)
+# Terminal 1  serveur Express (port 3001)
 npm run dev:server
 
-# Terminal 2 — client React (port 5173)
+# Terminal 2  client React (port 5173)
 npm run dev:client
 ```
 
@@ -467,7 +467,7 @@ graph LR
         REPO[restaurant-fullstack-week3<br/>main branch]
     end
 
-    subgraph Railway["Railway — Backend"]
+    subgraph Railway["Railway  Backend"]
         direction TB
         RW_BUILD[Nixpacks détecte Node.js]
         RW_ENV[Variables d'env :<br/>DATABASE_URL<br/>SESSION_SECRET<br/>NODE_ENV=production<br/>CLIENT_ORIGIN]
@@ -475,7 +475,7 @@ graph LR
         RW_BUILD --> RW_ENV --> RW_SERVER
     end
 
-    subgraph Vercel["Vercel — Frontend"]
+    subgraph Vercel["Vercel  Frontend"]
         direction TB
         VCL_BUILD[vite build → dist/]
         VCL_CONF[vercel.json :<br/>SPA rewrite /*]
@@ -483,7 +483,7 @@ graph LR
         VCL_BUILD --> VCL_CONF
     end
 
-    subgraph Neon["Neon — PostgreSQL"]
+    subgraph Neon["Neon  PostgreSQL"]
         PGDB[(savoria_db)]
     end
 
@@ -514,18 +514,18 @@ Mettre à jour `CLIENT_ORIGIN` sur Railway avec l'URL Vercel finale (ex: `https:
 
 ---
 
-## Sécurité — Points Clés
+## Sécurité  Points Clés
 
 | Mesure | Implémentation |
 |---|---|
-| Mots de passe hashés | `bcrypt.hash(password, 12)` — jamais de plaintext |
+| Mots de passe hashés | `bcrypt.hash(password, 12)`  jamais de plaintext |
 | Sessions sécurisées | `httpOnly: true`, `secure: true` en prod, `sameSite: none` cross-origin |
 | Session fixation | `req.session.regenerate()` après login |
 | Secrets exclus de git | `.env` dans `.gitignore`, `.env.example` sans valeurs |
-| SQL injection | Paramètres préparés `$1, $2, ...` — jamais de concaténation string |
-| CORS restreint | `origin: CLIENT_ORIGIN` — pas de wildcard `*` en prod |
+| SQL injection | Paramètres préparés `$1, $2, ...`  jamais de concaténation string |
+| CORS restreint | `origin: CLIENT_ORIGIN`  pas de wildcard `*` en prod |
 | Message d'erreur neutre | Login renvoie "Invalid email or password" sans préciser lequel |
 
 ---
 
-*Savoria Bistro & Cellar — Practicum Week 3 — Full Stack Node.js + React + PostgreSQL*
+*Savoria Bistro & Cellar  Practicum Week 3  Full Stack Node.js + React + PostgreSQL*
