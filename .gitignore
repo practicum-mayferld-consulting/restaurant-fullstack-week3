@@ -43,4 +43,5 @@ pids
 .env.*.local
 server/.env
 client/.env
+client/.env.local
 *.temp
